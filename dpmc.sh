@@ -1,2 +1,2 @@
 #!/bin/sh
-cat output.txt
+cat /home/ec2-user/output.txt
