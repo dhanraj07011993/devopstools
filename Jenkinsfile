@@ -11,7 +11,7 @@ pipeline {
               sh """
                 for host in 54.236.16.183 3.80.206.241
                 do
-                scp ${WORKSPACE}/dpmc.sh ec2-user@$host:~/
+                scp ${WORKSPACE}/dpmc.sh $host:~/
                 cd ~
                 chmod 755 dpmc.sh
                 ./dpmc.sh
