@@ -1,6 +1,7 @@
 pipeline {
   agent any
   stages {
+    stage ('Memory Collection') {
       steps {
         script {
            dir ( "${WORKSPACE}" ) {
@@ -20,5 +21,6 @@ pipeline {
         }
       } 
     }
+  }
   }
  
