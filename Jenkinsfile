@@ -6,7 +6,7 @@ pipeline {
         script {
              sshagent(credentials: ['sshDatapump']) {
                             sh """
-                for host in 54.236.16.183 3.80.206.241
+                for host in 54.236.16.183
                 do
                 scp ${WORKSPACE}/dpmc.sh $host:~/
                 cd ~
